@@ -27,9 +27,9 @@
   --bg-lift: #151c1d;
   --ink: #e5dfd2;
   --ink-strong: #f4efe4;
-  --muted: #9a9a8e;
-  --muted-dim: #6d726c;
-  --faint: #454c49;
+  --muted: #aaa99b;
+  --muted-dim: #868b82;
+  --faint: #737b73;
   --line: rgba(218, 210, 193, 0.14);
   --line-strong: rgba(218, 210, 193, 0.28);
   --accent: #b9583d;
@@ -50,7 +50,7 @@
   --font-mono: "Roboto Mono", "SFMono-Regular", "Cascadia Mono", "Courier New", monospace;
   --shadow: 0 28px 70px rgba(0, 0, 0, 0.35);
   --radius: 3px;
-  --page-max: 1180px;
+  --page-max: 1360px;
   --pad: clamp(18px, 4.2vw, 54px);
   --ease: cubic-bezier(0.22, 0.8, 0.22, 1);
 }
@@ -64,6 +64,7 @@
 html {
   scroll-behavior: smooth;
   background: var(--bg);
+  font-size: 17px;
 }
 
 body {
@@ -75,8 +76,8 @@ body {
     radial-gradient(55vw 48vh at -8% 42%, rgba(112, 72, 48, 0.08), transparent 70%),
     var(--bg);
   font-family: var(--font-sans);
-  font-size: 15px;
-  line-height: 1.75;
+  font-size: 16px;
+  line-height: 1.78;
   letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -5161,7 +5162,7 @@ ol {
 
 @media (max-width: 640px) {
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .header-inner {
@@ -6458,4 +6459,341 @@ ol {
   .name-form input {
     font-size: 16px;
   }
+}
+
+/* =========================================================
+   可读性尺度（桌面大屏 / 手机统一提高小字下限）
+   ========================================================= */
+
+@media (min-width: 900px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.mono,
+.eyebrow {
+  font-size: 0.76rem;
+}
+
+.brand__text small,
+.case-code,
+.notebook-btn,
+.main-nav a span,
+.notebook-btn [data-clue-count],
+.section-head__meta,
+.page-side__label,
+.doc-frame__no,
+.doc-frame__foot,
+.paper__kicker,
+.paper__meta,
+.ledger th,
+.school-sheet .ledger th,
+.scan-label,
+.blueprint-bar,
+.legend,
+.repair-meta small,
+.repair-supplement__label,
+.sketch-foot__text,
+.record-badge,
+.folder-number,
+.folder-toggle,
+.folder-note,
+.photo-card__image::after,
+.photo-card__caption span,
+.photo-footnote,
+.photo-dialog__index,
+.photo-print__border,
+.photo-inspect-tag,
+.photo-back__label,
+.photo-back__date,
+.photo-dialog__date,
+.photo-dialog__meta,
+.photo-nav button,
+.tape-item__no,
+.tape-item__duration,
+.tape-aside,
+.deck-subtitle,
+.rec-light,
+.time-row,
+.tape-note,
+.transcript__title,
+.transcript-toggle,
+.cue__time,
+.cue__speaker,
+.cue--sound .cue__text,
+.transcript__foot,
+.tape-meta-strip small,
+.page-turn__label,
+.lock-kicker,
+.hint-toggle,
+.private-head__label,
+.private-head__note,
+.private-record__file,
+.private-record__date,
+.side-card__label,
+.attachment__head,
+.attachment__name,
+.ghost-tape__title,
+.ghost-tape__controls button,
+.door-path__text strong,
+.modal__kicker,
+.zoom-readout,
+.zoom-note,
+.zoom-reveal,
+.notebook__kicker,
+.notebook__progress,
+.clue-entry::before,
+.clue-entry__source,
+.notebook__foot,
+.toast small,
+.ending-label,
+.ending-remember__photo figcaption,
+.ending-copy__kicker,
+.ending-skip,
+.ending-refresh__bar,
+.altered-ledger th,
+.ending-note,
+.footer-fine,
+.footer-status,
+.reset-link,
+.last-skip,
+.last-caption,
+.water-scan__label,
+.water-stain-card::after,
+.lock-visual__top .mono,
+.lock-visual__top .tag {
+  font-size: 0.7rem;
+}
+
+.hero__sub,
+.hero__meta,
+.home-closing__label,
+.whisper-btn,
+.breadcrumb,
+.section-index,
+.entry-card__no,
+.entry-card__meta,
+.tag,
+.footer-brand,
+.tape-item__time,
+.tape-item__name,
+.photo-card__caption span,
+.photo-card__hint,
+.water-scan__value,
+.tape-meta-strip strong {
+  font-size: 0.76rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+}
+
+.notebook-btn [data-clue-count] {
+  min-width: 22px;
+  height: 19px;
+  font-size: 0.64rem;
+}
+
+.main-nav a {
+  font-size: 0.84rem;
+}
+
+.entry-card__desc {
+  font-size: 0.84rem;
+}
+
+.entry-card__meta {
+  line-height: 1.7;
+}
+
+.page-side__value {
+  font-size: 0.9rem;
+}
+
+.doc-note,
+.paper__sub,
+.folder-note {
+  font-size: 0.82rem;
+}
+
+.ledger {
+  font-size: 0.9rem;
+}
+
+.paper__body p,
+.repair-content p {
+  font-size: 0.95rem;
+}
+
+.annotation {
+  font-size: 0.8rem;
+}
+
+.handwrite {
+  font-size: 1rem;
+}
+
+.repair-meta div {
+  font-size: 0.76rem;
+}
+
+.repair-meta strong {
+  font-size: 0.88rem;
+}
+
+.repair-supplement p {
+  font-size: 0.9rem;
+}
+
+.side-card__text {
+  font-size: 0.86rem;
+}
+
+.altered-notice {
+  font-size: 0.9rem;
+}
+
+.photo-card__caption h2 {
+  font-size: 0.98rem;
+}
+
+.photo-card__hint {
+  font-size: 0.8rem;
+}
+
+.photo-dialog__desc {
+  font-size: 0.9rem;
+}
+
+.photo-back__blank {
+  font-size: 0.83rem;
+}
+
+.tape-aside {
+  font-size: 0.76rem;
+}
+
+.cue__text {
+  font-size: 0.9rem;
+}
+
+.transcript-toggle,
+.photo-nav button {
+  font-size: 0.72rem;
+}
+
+.tape-meta-strip strong {
+  font-size: 0.84rem;
+}
+
+.altered-ledger {
+  font-size: 0.86rem;
+}
+
+.private-record__body p {
+  font-size: 0.96rem;
+}
+
+.private-record__signature {
+  font-size: 0.84rem;
+}
+
+.name-tip {
+  font-size: 0.72rem;
+}
+
+.discrepancy-bar__text {
+  font-size: 0.88rem;
+}
+
+.btn {
+  font-size: 0.74rem;
+  min-height: 44px;
+}
+
+.door-path .btn,
+.ending-black__foot .btn,
+.ending-door__actions .btn,
+.confirm-dialog__actions .btn {
+  font-size: 0.7rem;
+  min-height: 38px;
+}
+
+.dialog-close {
+  font-size: 1.1rem;
+}
+
+.keypad-key {
+  font-size: 1rem;
+}
+
+.keypad-key--utility {
+  font-size: 0.78rem;
+}
+
+.whisper-btn {
+  color: var(--muted-dim);
+}
+
+.whisper-btn:hover,
+.whisper-btn:focus-visible {
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .hero__note p {
+    font-size: 0.95rem;
+  }
+
+  .brand__text {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+
+  .main-nav a {
+    font-size: 0.68rem;
+  }
+
+  .notebook-btn {
+    font-size: 0.68rem;
+  }
+
+  .hero__meta,
+  .home-closing__label,
+  .whisper-btn {
+    font-size: 0.72rem;
+  }
+
+  .brand__text small {
+    display: none;
+  }
+
+  .photo-card__caption h2 {
+    font-size: 0.92rem;
+  }
+
+  .altered-ledger {
+    font-size: 0.8rem;
+  }
+}
+
+/* 长英文眉标在窄屏时保持圆点与文字同一起始行 */
+.eyebrow {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.eyebrow::before {
+  margin-top: 0.34em;
 }
