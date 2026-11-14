@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0e0f">
+  <meta name="description" content="青石里三号楼建筑档案：三楼平面图、2001年维修记录与旧物业手绘草图。">
+  <title>建筑档案 · 镜子里的304</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/shared.js" defer></script>
+  <script src="assets/js/building.js" defer></script>
+</head>
+<body data-page="building">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="青石里旧楼档案 · 首页">
+        <span class="brand__seal" aria-hidden="true">青</span>
+        <span class="brand__text">青石里旧楼档案<small>QSL ARCHIVE / HOUSE 03</small></span>
+      </a>
+      <div class="header-tools">
+        <span class="case-code">ENQUIRY / 03 / 未结</span>
+        <button class="notebook-btn" type="button" data-notebook-toggle aria-haspopup="dialog">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h12v17H6zM9 7h6M9 10.5h6M9 14h4M3.5 6H6M3.5 10H6M3.5 14H6M3.5 18H6"/></svg>
+          调查手记
+          <span data-clue-count>00</span>
+        </button>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="档案页面">
+      <a href="index.html" data-nav="home"><span>01</span>首页</a>
+      <a href="building.html" data-nav="building"><span>02</span>建筑资料</a>
+      <a href="residents.html" data-nav="residents"><span>03</span>住户记录</a>
+      <a href="photos.html" data-nav="photos"><span>04</span>旧照片</a>
+      <a href="audio.html" data-nav="audio"><span>05</span>声音档案</a>
+      <a href="archive.html" data-nav="archive"><span>06</span>私人记录
+        <svg class="nav-lock" viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="7" width="9" height="6.5" rx="1"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-hero" data-index="02">
+      <div class="container">
+        <div class="page-hero__inner">
+          <div>
+            <div class="breadcrumb">
+              <a href="index.html">档案首页</a><span>/</span><span>建筑资料</span>
+            </div>
+            <div class="eyebrow" style="margin-bottom: 15px;">FILE 02 / STRUCTURAL RECORDS</div>
+            <h1 class="page-title">青石里三号楼<br>建筑档案</h1>
+            <p class="page-lead">
+              三份与三楼走廊有关的建筑资料。官方图集、维修记录，以及一张尚未归档的物业草图。
+            </p>
+          </div>
+          <aside class="page-side">
+            <div class="page-side__label">资料来源 / SOURCE</div>
+            <div class="page-side__value">旧物业档案室<br>三楼东侧走廊</div>
+            <div class="page-side__label" style="margin-top: 15px;">收录时间 / FILED</div>
+            <div class="page-side__value">2001.06.17<br>2012.09 封存</div>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-body">
+      <div class="container">
+
+        <section class="page-section" aria-labelledby="plan-title">
+          <div class="section-index">资料 A / 03F PLAN</div>
+          <h2 class="section-title" id="plan-title">三楼平面图</h2>
+          <p class="section-copy">
+            官方建筑图纸扫描件。三层沿东西向走廊布置，走廊尽头设有一面整装镜。
+            图纸中没有标注除此之外的房间。
+          </p>
+
+          <div class="blueprint-card" style="margin-top: 24px;">
+            <div class="blueprint-bar">
+              <span>QSL / 3F / A-03 / 建筑竣工图</span>
+              <span>比例 1:100 · 扫描件</span>
+            </div>
+            <div class="blueprint-stage">
+              <svg viewBox="0 0 1000 620" role="img" aria-labelledby="plan-svg-title plan-svg-desc">
+                <title id="plan-svg-title">青石里三号楼三层官方平面图</title>
+                <desc id="plan-svg-desc">平面图显示三间房：301、302和303室。一条东西向走廊的尽端画着一面镜子，没有304室。</desc>
+                <defs>
+                  <pattern id="bp-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <path d="M20 0H0V20" fill="none" stroke="#79b4c0" stroke-width=".55" opacity=".13"/>
+                  </pattern>
+                  <pattern id="bp-grid-major" width="100" height="100" patternUnits="userSpaceOnUse">
+                    <path d="M100 0H0V100" fill="none" stroke="#79b4c0" stroke-width=".8" opacity=".18"/>
+                  </pattern>
+                  <filter id="bp-rough" x="-5%" y="-5%" width="110%" height="110%">
+                    <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="8" result="noise"/>
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.1" xChannelSelector="R" yChannelSelector="G"/>
+                  </filter>
+                </defs>
+                <rect width="1000" height="620" fill="#0a232b"/>
+                <rect width="1000" height="620" fill="url(#bp-grid)"/>
+                <rect width="1000" height="620" fill="url(#bp-grid-major)"/>
+
+                <!-- 外轮廓 -->
+                <g filter="url(#bp-rough)" fill="none" stroke="#88c4cd" stroke-width="2.2">
+                  <path d="M92 75h816v476H92z"/>
+                  <path d="M140 125h232v154H140zM402 125h226v154H402z"/>
+                  <path d="M140 367h488v132H140z"/>
+                  <path d="M658 125h200v374H658z"/>
+                  <path d="M125 343h760"/>
+                  <path d="M125 557h760"/>
+                </g>
+
+                <!-- 房间填充 -->
+                <g fill="#79b4c0" opacity=".045">
+                  <path d="M140 125h232v154H140z"/>
+                  <path d="M402 125h226v154H402z"/>
+                  <path d="M140 367h488v132H140z"/>
+                  <path d="M658 125h200v374H658z"/>
+                </g>
+
+                <!-- 门与开启线 -->
+                <g fill="none" stroke="#b0dae0" stroke-width="1.4" opacity=".9">
+                  <path d="M260 279v64h62"/>
+                  <path d="M260 343a62 62 0 0 1 62-64" stroke-dasharray="4 4" opacity=".55"/>
+                  <path d="M472 279v65h56"/>
+                  <path d="M472 344a56 56 0 0 1 56-65" stroke-dasharray="4 4" opacity=".55"/>
+                  <path d="M354 367v-58h58"/>
+                  <path d="M354 309a58 58 0 0 1 58 58" stroke-dasharray="4 4" opacity=".55"/>
+                  <path d="M770 279v70h58"/>
+                  <path d="M770 349a58 58 0 0 1 58-70" stroke-dasharray="4 4" opacity=".55"/>
+                </g>
+
+                <!-- 楼梯 -->
+                <g fill="none" stroke="#84bdc6" stroke-width="1.3" opacity=".74">
+                  <path d="M94 436h46v120H94zM94 461h46M94 486h46M94 511h46M94 536h46"/>
+                  <path d="M140 496h18M140 522h18"/>
+                  <path d="M118 583v-8h4v8z"/>
+                  <path d="M117 585l6-7M123 585l-6-7"/>
+                </g>
+
+                <!-- 窗 -->
+                <g stroke="#8fc9d1" stroke-width="2" opacity=".62">
+                  <path d="M186 125v-9M238 125v-9M186 116h52M290 125v-9M342 125v-9M290 116h52M804 125v-9M856 125v-9M804 116h52"/>
+                  <path d="M140 499H92M140 517H92M166 367h24M367 367h25"/>
+                </g>
+
+                <!-- 走廊尽头的镜子 -->
+                <g class="plan-hotspot" id="plan-mirror" role="button" tabindex="0" aria-label="检查走廊尽头的镜面位置">
+                  <rect x="866" y="372" width="28" height="99" fill="#bde4e9" opacity=".14"/>
+                  <rect x="872" y="377" width="16" height="89" fill="none" stroke="#c2e5e9" stroke-width="2"/>
+                  <path d="M872 383l16 32M872 416l16 28M872 447l16 19" stroke="#c2e5e9" stroke-width=".8" opacity=".5"/>
+                  <!-- 点击区域 -->
+                  <rect x="850" y="352" width="65" height="140" fill="transparent" stroke="transparent"/>
+                </g>
+
+                <!-- 文字标注 -->
+                <g fill="#b9dde1" font-family="'Roboto Mono', 'Courier New', monospace" font-size="16" letter-spacing="1">
+                  <text x="159" y="160">301</text>
+                  <text x="159" y="182" font-size="9" fill="#6ea8b2">ROOM 301</text>
+                  <text x="421" y="160">302</text>
+                  <text x="421" y="182" font-size="9" fill="#6ea8b2">ROOM 302</text>
+                  <text x="159" y="401">303</text>
+                  <text x="159" y="423" font-size="9" fill="#6ea8b2">ROOM 303</text>
+                  <text x="675" y="160">设备间</text>
+                  <text x="675" y="182" font-size="9" fill="#6ea8b2">UTILITY</text>
+                  <text x="519" y="321" font-size="12" fill="#9bcdd3">走 廊 / CORRIDOR</text>
+                  <text x="879" y="361" font-size="10" fill="#8bc5cd">镜</text>
+                  <text x="879" y="406" font-size="8" fill="#8bc5cd">MIRROR</text>
+                </g>
+
+                <!-- 尺寸线 -->
+                <g fill="none" stroke="#77abb3" stroke-width=".9" opacity=".6">
+                  <path d="M90 66V42h816v24M90 54h816"/>
+                  <path d="M90 615v-22M906 615v-22M90 603h816"/>
+                  <path d="M74 125v154M58 125v154M65 125h18M65 279h18"/>
+                </g>
+                <g fill="#6f9ca3" font-family="'Roboto Mono', monospace" font-size="9" letter-spacing=".7">
+                  <text x="451" y="50">15.40 m / 3F EAST-WEST</text>
+                  <text x="450" y="600">QSL-03 PLAN / REV. 2001-03</text>
+                  <text x="20" y="209" transform="rotate(-90 20 209)">4.10 m</text>
+                </g>
+
+                <!-- 北针与标题 -->
+                <g transform="translate(836 64)" fill="none" stroke="#8bc5cd" stroke-width="1.2">
+                  <circle cx="0" cy="0" r="21"/>
+                  <path d="M0-18 6 5 0 1-6 5Z" fill="#8bc5cd" stroke="none"/>
+                  <text x="-3" y="-28" fill="#b9dde1" stroke="none" font-family="monospace" font-size="9">N</text>
+                </g>
+                <g transform="translate(711 591)" fill="#7baeb6" font-family="'Roboto Mono', monospace" font-size="8.5" letter-spacing=".6">
+                  <text x="0" y="0">ARCHIVE NO.</text>
+                  <text x="88" y="0" fill="#b9dde1">QSL-3F-001</text>
+                  <text x="0" y="13">CHECKED</text>
+                  <text x="88" y="13" fill="#b9dde1">2001.03.22</text>
+                </g>
+
+                <text x="36" y="38" fill="#a6cfd5" font-family="'Roboto Mono', monospace" font-size="10" letter-spacing="2">QINGSHILI BLOCK 3 / FLOOR 3</text>
+                <path d="M0 0h1000v620H0z" fill="none" stroke="#b2dde2" stroke-width="1" opacity=".2"/>
+              </svg>
+            </div>
+            <div class="blueprint-caption">
+              <div class="legend">
+                <span><i></i>墙体</span>
+                <span><i class="line-broken"></i>门扇开启线</span>
+                <span><i></i>固定家具 / 设备</span>
+              </div>
+              <button class="btn btn--ghost" type="button" id="plan-mirror-button" aria-controls="plan-note">
+                检查镜面位置
+              </button>
+            </div>
+          </div>
+
+          <div class="plan-note" id="plan-note" role="status">
+            <strong>图注 3F-07：</strong>走廊尽端为整装镜面。点击图纸中的镜面位置，可核对图注。
+          </div>
+
+          <div class="stamp-row">
+            <span class="tag tag--ok">图签完整</span>
+            <span class="tag">3F 竣工图</span>
+            <span class="tag">无扩建记录</span>
+          </div>
+        </section>
+
+        <section class="page-section" aria-labelledby="repair-title">
+          <div class="section-index">资料 B / REPAIR LOG</div>
+          <h2 class="section-title" id="repair-title">维修记录</h2>
+          <p class="section-copy">
+            2001年6月17日，物业接到三楼住户报修。维修单为手写原件，右下角有维修人员张建民的签名。
+          </p>
+
+          <div class="doc-grid" style="margin-top: 24px;">
+            <article class="paper repair-sheet" aria-labelledby="repair-doc-title">
+              <div class="paper__inner">
+                <div class="paper__header">
+                  <div>
+                    <div class="paper__kicker">QINGSHILI PROPERTY / MAINTENANCE</div>
+                    <h3 class="paper__title" id="repair-doc-title">公共设施维修记录单</h3>
+                    <p class="paper__sub">青石里三号楼 · 物业维修组</p>
+                  </div>
+                  <div class="repair-sheet__stamp" aria-label="维修单盖章：已检">已检<br>06.17</div>
+                </div>
+
+                <div class="repair-meta">
+                  <div><small>记录日期 / DATE</small><strong>2001年6月17日</strong></div>
+                  <div><small>维修人员 / STAFF</small><strong>张建民</strong></div>
+                  <div><small>报修地点 / LOCATION</small><strong>三号楼 三层走廊</strong></div>
+                  <div><small>维修时间 / ARRIVED</small><strong>凌晨 2点20分</strong></div>
+                </div>
+
+                <div class="repair-content">
+                  <p>三楼走廊尽头的镜面出现裂纹。</p>
+                  <p>住户反映凌晨经常听到镜子后方传来敲击声。</p>
+                  <p>检查时未发现墙体内部存在空腔。</p>
+                  <p>维修时间：凌晨2点20分。</p>
+                </div>
+
+                <div class="stamp-row" style="justify-content: space-between; align-items: center;">
+                  <span class="annotation">现场处理：镜面暂不更换，待复核。</span>
+                  <div class="stamp" aria-label="异常记录印章">异常</div>
+                </div>
+
+                <button class="btn btn--ghost repair-reveal-btn" type="button" id="repair-supplement-button" aria-expanded="false" aria-controls="repair-supplement" style="margin-top: 20px;">
+                  检出维修单背面手写补记
+                </button>
+
+                <div class="repair-supplement" id="repair-supplement" tabindex="-1" hidden>
+                  <div class="repair-supplement__label">补充记录 / 张建民 / 字迹较急</div>
+                  <p>
+                    住户称，最早一次敲击大约出现在 <mark>02:13</mark>。我到达时已经过了七分钟。
+                    镜面里面像有什么东西在动，但墙是实的。
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <aside class="side-card" aria-label="维修单说明">
+              <div class="side-card__label">READING NOTE / 阅读提示</div>
+              <h3 class="side-card__title">到达时间，不一定是异常开始的时间。</h3>
+              <p class="side-card__text">
+                维修单正面记录的 02:20 是维修人员到达现场的时间。
+                背面补记提到，住户听见的最早一次敲击在另一个时刻。
+              </p>
+              <div class="divider" style="margin: 16px 0;"></div>
+              <div class="page-side__label">维修结论 / CONCLUSION</div>
+              <p class="side-card__text">
+                镜面存在裂纹；墙体内未发现空腔。
+                “镜后有房间”的判断没有建筑依据。
+              </p>
+              <div class="stamp-row">
+                <span class="tag tag--warn">时间存在差异</span>
+                <span class="tag">原件已签</span>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="page-section" aria-labelledby="sketch-title">
+          <div class="section-index">资料 C / UNFILED SKETCH</div>
+          <h2 class="section-title" id="sketch-title">旧物业手绘草图</h2>
+          <p class="section-copy">
+            这张草图夹在2001年维修单的背面，没有编号，也没有出现在任何一册归档图集中。
+            它的房型与官方图纸大致相同，但走廊尽端多画了一处被涂黑的位置。
+          </p>
+
+          <div class="doc-grid" style="margin-top: 24px;">
+            <div class="doc-frame">
+              <div class="doc-frame__head">
+                <div class="doc-frame__title">未归档草图 / 铅笔与蓝色圆珠笔</div>
+                <div class="doc-frame__no">QSL / 3F / U-01</div>
+              </div>
+              <div class="sketch-preview" id="sketch-preview">
+                <svg viewBox="0 0 1000 560" role="img" aria-labelledby="sketch-svg-title sketch-svg-desc">
+                  <title id="sketch-svg-title">旧物业手绘三楼草图</title>
+                  <desc id="sketch-svg-desc">手绘平面图上，三楼走廊尽头除了镜子，还有一块被黑色笔迹涂满的矩形区域。</desc>
+                  <defs>
+                    <filter id="paper-noise">
+                      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" seed="4"/>
+                      <feColorMatrix type="saturate" values="0"/>
+                      <feComponentTransfer><feFuncA type="linear" slope=".1"/></feComponentTransfer>
+                    </filter>
+                    <pattern id="scribble" width="9" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-8)">
+                      <path d="M0 1l9 5M2 7L8 0M-2 5l8-4" stroke="#292722" stroke-width="1.5" opacity=".75"/>
+                    </pattern>
+                  </defs>
+                  <rect width="1000" height="560" fill="#c7b99e"/>
+                  <rect width="1000" height="560" filter="url(#paper-noise)" opacity=".9"/>
+                  <circle cx="99" cy="456" r="72" fill="#8b7e63" opacity=".09"/>
+                  <path d="M526 67c107 21 146 4 204-24M88 502c88 9 172 5 252-14" fill="none" stroke="#8b7b5e" stroke-width="1" opacity=".2"/>
+
+                  <g fill="none" stroke="#5b5a4e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M91 91c248-9 483-8 713 5 10 120 8 245-2 372-225 11-481 12-714 2-7-130-6-251 3-379Z"/>
+                    <path d="M137 131c187-4 348-3 470 3 7 66 7 133-2 190-157 5-311 5-468 1-2-68-2-135 0-194Z"/>
+                    <path d="M137 347c150-2 307-2 470 1 5 49 3 95-1 140-137 4-289 5-469 2-2-48-1-94 0-143Z"/>
+                    <path d="M629 132c54-3 108-2 164 1 5 97 5 201-1 312-52 4-108 4-163 1-5-105-5-210 0-314Z"/>
+                    <path d="M103 331c211-3 403-4 565-1" stroke-width="1.2" opacity=".6"/>
+                    <path d="M104 505c206-4 420-4 566-2" stroke-width="1.2" opacity=".6"/>
+                    <path d="M296 286v53h58M434 286v53h54M352 347v-49h53M673 286v55h55"/>
+                    <path d="M296 339a53 53 0 0 1 58-53M434 339a54 54 0 0 1 54-53M352 298a49 49 0 0 1 53 49M673 341a55 55 0 0 1 55-55"/>
+                  </g>
+
+                  <g fill="none" stroke="#3e4f57" stroke-width="1.5" opacity=".85">
+                    <path d="M646 191c50-2 96-2 129 1 2 103 2 170-1 218-44 3-90 2-128-1-2-71-2-145 0-218Z"/>
+                    <path d="M699 242c25 1 48 2 64 4M700 265c25 0 45 1 62 2M700 288c23-1 44 0 60 1M701 311c22-1 41 0 57 1"/>
+                    <path d="M606 410c-13 53-13 91-2 113M582 435c-8 29-8 55-1 76"/>
+                  </g>
+
+                  <g fill="none" stroke="#5b5a4e" stroke-width="1.4">
+                    <path d="M641 402h159v95H641z"/>
+                    <path d="M648 409h32v81h-32zM690 409h52v81h-52zM752 409h41v81h-41z" opacity=".5"/>
+                    <path d="M181 502h32v-20h-32zM234 502h26v-20h-26z" opacity=".6"/>
+                  </g>
+
+                  <g fill="#4e4d43" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="18" letter-spacing="2">
+                    <text x="160" y="169">301</text>
+                    <text x="317" y="169">302</text>
+                    <text x="160" y="390">303</text>
+                    <text x="637" y="168">杂物间</text>
+                    <text x="322" y="276" font-size="13" opacity=".7">走廊 / 镜在尽头</text>
+                  </g>
+
+                  <!-- 走廊尽头的镜子 -->
+                  <g transform="translate(734 395) rotate(1)">
+                    <rect x="0" y="0" width="45" height="86" fill="none" stroke="#3f5e68" stroke-width="2"/>
+                    <path d="M8 10l30 62M15 6l25 68M8 48l28 30" stroke="#6a868c" stroke-width=".8" opacity=".65"/>
+                    <text x="11" y="104" fill="#4e6064" font-family="'Noto Serif SC', serif" font-size="12">镜</text>
+                  </g>
+
+                  <!-- 被涂黑的位置 -->
+                  <g>
+                    <path d="M791 371c38-4 66-3 84 2 4 46 2 84-2 122-28 6-56 7-86 3-4-45-3-87 4-127Z" fill="#2a2823"/>
+                    <path d="M792 373c36-5 67-5 84 2 4 40 3 81-3 121-26 6-54 6-81 2-4-39-4-84 0-125Z" fill="url(#scribble)"/>
+                    <path d="M786 366c29-9 62-8 95 2M786 498c25 6 57 8 94 3" stroke="#3e3b31" stroke-width="2" opacity=".75"/>
+                    <path d="M787 366c-7 41-6 91 1 137" stroke="#6f3d2e" stroke-width="1.2" fill="none" opacity=".4"/>
+                  </g>
+
+                  <!-- 隐藏在涂黑处的数字，放大后显现 -->
+                  <g class="focus-number" aria-hidden="true">
+                    <circle cx="833" cy="435" r="45" fill="none" stroke="#8b3a2a" stroke-width="1.5" stroke-dasharray="6 5" opacity=".55"/>
+                    <text x="833" y="445" fill="#ebe1c8" font-family="'Roboto Mono', monospace" font-size="34" font-weight="700" text-anchor="middle" letter-spacing="2">304</text>
+                  </g>
+
+                  <g fill="none" stroke="#4b4a40" stroke-width="1.3" opacity=".75">
+                    <path d="M82 80l-28-24M83 80l-4-31M817 520l26 24M702 72l16-26"/>
+                    <path d="M762 327c12-14 26-21 43-22" stroke="#7c3e2e" opacity=".5"/>
+                    <path d="M805 304l-3 16-13-8" stroke="#7c3e2e" opacity=".5"/>
+                  </g>
+                  <text x="686" y="283" fill="#7e3c2e" font-family="'Noto Serif SC', serif" font-size="13" opacity=".6" transform="rotate(-4 686 283)">这里原本是什么？</text>
+                  <text x="60" y="530" fill="#5b594d" font-family="'Roboto Mono', monospace" font-size="10" letter-spacing="1.2" opacity=".7">NO. ____ / 3F / 未归档 / 铅笔, 圆珠笔</text>
+                  <path d="M62 520c178 2 318 1 475-2" stroke="#6a6254" stroke-width="1" opacity=".3"/>
+                </svg>
+              </div>
+              <div class="sketch-foot">
+                <span class="sketch-foot__text">扫描件 / 600 DPI / 画面有二次涂改</span>
+                <button class="btn btn--accent" type="button" id="open-sketch">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M8 10.5h5M10.5 8v5"/></svg>
+                  放大辨认
+                </button>
+              </div>
+            </div>
+
+            <aside class="side-card">
+              <div class="side-card__label">MATERIAL NOTE / 材料说明</div>
+              <h3 class="side-card__title">这张图，本不该在这里。</h3>
+              <p class="side-card__text">
+                图上的结构和官方图纸一致，但画图的人似乎多看见了一个空间。
+                涂黑的位置在官方图纸上对应的是——走廊尽头的墙。
+              </p>
+              <div class="divider" style="margin: 16px 0;"></div>
+              <div class="page-side__label">辨认建议 / HOW TO READ</div>
+              <p class="side-card__text">
+                打开放大镜，把倍率调到 <span class="red-pencil">170%</span> 以上，
+                观察被黑色笔迹覆盖的地方。
+              </p>
+              <div class="stamp-row">
+                <span class="tag tag--warn">与官方图纸不符</span>
+                <span class="tag">未归档</span>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <div class="page-turn">
+          <div class="page-turn__side">
+            <span class="page-turn__label">PREVIOUS / 返回</span>
+            <a href="index.html">← 档案首页</a>
+          </div>
+          <div class="page-turn__progress" aria-label="档案进度：第2页，共6页">
+            <span class="is-past"></span><span class="is-current"></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="page-turn__side page-turn__next">
+            <span class="page-turn__label">NEXT / 下一份档案</span>
+            <a href="residents.html">住户记录 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <dialog class="modal modal--wide" id="sketch-dialog" aria-labelledby="sketch-dialog-title">
+    <div class="modal__bar">
+      <span class="modal__kicker">UNFILED SKETCH / QSL-3F-U-01</span>
+      <button class="dialog-close" type="button" data-close-sketch aria-label="关闭草图放大视图">×</button>
+    </div>
+    <div class="modal__body">
+      <h2 class="modal__title" id="sketch-dialog-title">旧物业手绘草图 / 放大</h2>
+      <p class="modal__lead">
+        原图为铅笔与圆珠笔绘制，涂改处墨迹很重。调节倍率，查看走廊尽端被遮住的位置。
+      </p>
+      <div class="zoom-toolbar">
+        <div class="zoom-controls" aria-label="缩放控制">
+          <button class="zoom-btn" type="button" data-zoom-out aria-label="缩小">−</button>
+          <span class="zoom-readout" data-zoom-readout aria-live="polite">100%</span>
+          <button class="zoom-btn" type="button" data-zoom-in aria-label="放大">＋</button>
+        </div>
+        <input class="zoom-track" type="range" id="zoom-range" min="100" max="260" value="100" step="10" aria-label="草图放大倍率">
+      </div>
+      <div class="zoom-stage" id="zoom-stage">
+        <div class="zoom-stage__canvas" id="zoom-canvas"></div>
+        <div class="zoom-reveal" aria-hidden="true">涂黑处 / 可辨数字 <strong>304</strong></div>
+      </div>
+      <p class="zoom-note">
+        扫描备注：原图右下角有撕裂，数字区域部分被黑色圆珠笔覆盖。辨认结果仅基于图像残留笔画。
+      </p>
+    </div>
+  </dialog>
+
+  <noscript>
+    <div class="container"><p class="doc-note">本页的放大辨认与补充记录需要启用 JavaScript。</p></div>
+  </noscript>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">青石里旧楼档案</p>
+        <p class="footer-fine">QSL-03 / 原住户许砚整理 / 非公开网络档案</p>
+      </div>
+      <div class="footer-tools">
+        <span class="footer-status"><i class="is-live" aria-hidden="true"></i>档案室离线备份</span>
+        <button class="reset-link" type="button" data-reset>恢复初始档案</button>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

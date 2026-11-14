@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">2001年6月17日凌晨，空走廊</title>
+  <desc id="desc">凌晨的走廊里空无一人。尽头的镜子中映出一扇微开的门和一个模糊的人影，那个人影正站在门后。</desc>
+  <defs>
+    <linearGradient id="nightWall4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5c5b4a"/>
+      <stop offset=".5" stop-color="#4a4a3b"/>
+      <stop offset="1" stop-color="#2d3027"/>
+    </linearGradient>
+    <linearGradient id="nightLeft4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#161b18"/>
+      <stop offset=".66" stop-color="#353a30"/>
+      <stop offset="1" stop-color="#444a3c"/>
+    </linearGradient>
+    <linearGradient id="nightRight4" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#111613"/>
+      <stop offset=".7" stop-color="#2f352c"/>
+      <stop offset="1" stop-color="#444a3c"/>
+    </linearGradient>
+    <linearGradient id="nightFloor4" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#0c0e0c"/>
+      <stop offset=".58" stop-color="#242821"/>
+      <stop offset="1" stop-color="#44443a"/>
+    </linearGradient>
+    <linearGradient id="glass4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3d443c"/>
+      <stop offset=".22" stop-color="#151b18"/>
+      <stop offset=".55" stop-color="#1e2520"/>
+      <stop offset="1" stop-color="#050807"/>
+    </linearGradient>
+    <linearGradient id="openDoor4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#120f0b"/>
+      <stop offset=".4" stop-color="#2c241b"/>
+      <stop offset="1" stop-color="#080706"/>
+    </linearGradient>
+    <radialGradient id="doorLight4" cx=".48" cy=".48" r=".5">
+      <stop offset="0" stop-color="#c7a575" stop-opacity=".32"/>
+      <stop offset=".55" stop-color="#8a6b45" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#4d3925" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mirrorGlow4" cx=".54" cy=".42" r=".54">
+      <stop offset="0" stop-color="#d2b483" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#68736a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette4" cx=".5" cy=".44" r=".76">
+      <stop offset=".25" stop-color="#020403" stop-opacity="0"/>
+      <stop offset=".7" stop-color="#020403" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#010201" stop-opacity=".74"/>
+    </radialGradient>
+    <filter id="figureBlur4">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="handBlur4">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="soft4">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <filter id="grain4">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="4" seed="41" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".5"/>
+      </feComponentTransfer>
+    </filter>
+    <clipPath id="glassClip4">
+      <rect x="498" y="170" width="408" height="535" rx="3"/>
+    </clipPath>
+    <clipPath id="frame4">
+      <rect width="1200" height="900"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame4)">
+    <rect width="1200" height="900" fill="#080a08"/>
+
+    <!-- 走廊结构 -->
+    <path d="M0 0h1200l-270 148H478Z" fill="#0e110e"/>
+    <path d="M0 0l478 148v527L0 900Z" fill="url(#nightLeft4)"/>
+    <path d="M1200 0l-270 148v527L1200 900Z" fill="url(#nightRight4)"/>
+    <path d="M478 148h452v527H478Z" fill="url(#nightWall4)"/>
+    <path d="M0 900l478-225h452l270 225Z" fill="url(#nightFloor4)"/>
+    <path d="M0 0h1200l-270 148H478Z" fill="#11130f" opacity=".85"/>
+    <path d="M478 675h452M0 829l478-154M1200 829l-270-154" stroke="#1c201a" stroke-width="9" opacity=".8"/>
+    <path d="M0 741l478-66M1200 741l-270-66" stroke="#10130f" stroke-width="2" opacity=".5"/>
+
+    <!-- 走廊侧门 -->
+    <g>
+      <path d="M0 203l280 77v496L0 825Z" fill="#20241d"/>
+      <path d="M18 229l229 62v414L18 788Z" fill="#2b3128"/>
+      <path d="M38 251l184 50v376L38 746Z" fill="#20251e"/>
+      <rect x="55" y="417" width="147" height="35" fill="#1b1f19" stroke="#3c4235" stroke-width="1" opacity=".75"/>
+      <circle cx="224" cy="487" r="4" fill="#6e664f" opacity=".38"/>
+      <text x="42" y="225" fill="#7f826a" font-family="serif" font-size="15" opacity=".32" transform="rotate(15 42 225)">301</text>
+      <path d="M273 297l164 35v373l-164 51Z" fill="#272b23" stroke="#11150f" stroke-width="2"/>
+      <path d="M292 320l125 28v308l-125 40Z" fill="#32352b"/>
+      <text x="295" y="310" fill="#7f826a" font-family="serif" font-size="13" opacity=".25" transform="rotate(9 295 310)">302</text>
+      <path d="M1080 193l-213 63v454l223 113Z" fill="#22261f"/>
+      <path d="M1062 219l-171 52v397l176 91Z" fill="#2c3028"/>
+      <path d="M1043 243l-130 42v348l132 69Z" fill="#22261e"/>
+      <text x="1033" y="211" fill="#85866e" font-family="serif" font-size="15" opacity=".31" transform="rotate(-12 1033 211)">303</text>
+      <circle cx="930" cy="510" r="4" fill="#706550" opacity=".35"/>
+    </g>
+
+    <!-- 故障的顶灯 -->
+    <g>
+      <path d="M420 60h165l-25 37H444Z" fill="#22251e" stroke="#10130f" stroke-width="3"/>
+      <rect x="444" y="97" width="115" height="9" rx="3" fill="#b7a476" opacity=".32"/>
+      <path d="M451 106l-80 457h309L542 106Z" fill="#c4ad79" opacity=".04"/>
+      <path d="M730 65h140l-22 33H750Z" fill="#20231d" stroke="#10130f" stroke-width="3"/>
+      <rect x="750" y="98" width="100" height="7" rx="2" fill="#938760" opacity=".18"/>
+      <path d="M0 0h90v900H0ZM1120 0h80v900h-80Z" fill="#050706" opacity=".45"/>
+      <circle cx="111" cy="314" r="1.5" fill="#bdb48c" opacity=".2"/>
+      <circle cx="86" cy="639" r="1" fill="#bdb48c" opacity=".15"/>
+    </g>
+
+    <!-- 镜框 -->
+    <g>
+      <rect x="472" y="145" width="460" height="584" rx="9" fill="#11140f"/>
+      <rect x="484" y="156" width="436" height="561" rx="5" fill="#3b3629"/>
+      <rect x="493" y="165" width="418" height="544" rx="3" fill="#0a0c09"/>
+      <rect x="498" y="170" width="408" height="535" rx="3" fill="url(#glass4)"/>
+      <path d="M478 151h448v13H478ZM478 713h448v11H478Z" fill="#6b5d43" opacity=".18"/>
+      <path d="M493 166l13-14M907 166l-12-14M493 708l13 14M907 708l-12 14" stroke="#7a6848" stroke-width="1.2" opacity=".5"/>
+      <rect x="498" y="170" width="408" height="535" fill="url(#mirrorGlow4)"/>
+    </g>
+
+    <!-- 镜中景象 -->
+    <g clip-path="url(#glassClip4)">
+      <rect x="498" y="170" width="408" height="535" fill="#0b100c"/>
+      <path d="M498 170h408v63H498Z" fill="#3e4035" opacity=".48"/>
+      <path d="M498 565h408v140H498Z" fill="#11150f"/>
+
+      <!-- 镜中倒影里的门：304 -->
+      <g>
+        <path d="M635 255l191 31v356l-191 39Z" fill="url(#openDoor4)" stroke="#1c1912" stroke-width="4"/>
+        <path d="M650 274l159 28v301l-159 31Z" fill="#241d16"/>
+        <path d="M655 280l150 27v285l-150 30Z" fill="#0f0c09"/>
+        <path d="M655 280l52 10v299l-52 13Z" fill="#33291e"/>
+        <path d="M706 290l99 19v265l-99 20Z" fill="#0a0806"/>
+        <path d="M713 301l85 16v232l-85 16Z" fill="#211912" opacity=".9"/>
+        <path d="M724 315l62 10v207l-62 11Z" fill="#0c0907"/>
+        <path d="M785 332l3 191" stroke="#99794e" stroke-width="2" opacity=".25"/>
+        <circle cx="791" cy="427" r="2.7" fill="#a38456" opacity=".53"/>
+        <path d="M651 272l-7 304 9-1 9-301Z" fill="#3e3021"/>
+        <path d="M806 283l20 4v274l-18 3Z" fill="#0a0907" opacity=".8"/>
+        <rect x="725" y="322" width="59" height="27" fill="#a89572" opacity=".13"/>
+        <text x="755" y="343" fill="#bdaa84" font-family="serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="3" opacity=".33">304</text>
+        <path d="M712 569h120v41H712Z" fill="#b68858" opacity=".06"/>
+        <path d="M732 568l9-15h74l10 16Z" fill="#7b5d3d" opacity=".08"/>
+      </g>
+
+      <!-- 门后模糊的人影 -->
+      <g filter="url(#figureBlur4)">
+        <path d="M786 430c1-34 15-55 34-55 22 0 33 23 32 57l4 148h-75Z" fill="#a1a58f" opacity=".26"/>
+        <path d="M802 341c0-27 14-44 31-44 18 0 30 18 29 43-1 27-12 44-30 44-17 0-30-17-30-43Z" fill="#b3b19a" opacity=".22"/>
+        <path d="M795 378c-12 20-15 67-9 131l5 56M845 381c10 29 10 83 5 137l-4 45" fill="none" stroke="#9da18c" stroke-width="13" stroke-linecap="round" opacity=".2"/>
+      </g>
+      <g filter="url(#handBlur4)">
+        <path d="M796 455c-14 9-22 22-21 36 0 12 11 18 21 11l18-13-2-19Z" fill="#b6b39b" opacity=".34"/>
+        <path d="M794 470c-5 9-7 18-5 26M800 470c-4 9-4 17-2 24M806 470c-5 8-6 16-4 22" stroke="#8e907c" stroke-width="2" opacity=".3"/>
+      </g>
+
+      <!-- 倒影中的走廊与裂纹 -->
+      <path d="M498 170h408v37H498Z" fill="#1a1e18" opacity=".45"/>
+      <path d="M512 170l-7 535M896 170l5 535" stroke="#72735e" stroke-width="2" opacity=".06"/>
+      <path d="M642 186l26 17 12 27 18 12-3 27 23 25-4 31 15 22" fill="none" stroke="#b9c2b3" stroke-width="1.2" opacity=".25"/>
+      <path d="M668 203l-19 19 3 31-22 28" fill="none" stroke="#b9c2b3" stroke-width=".8" opacity=".16"/>
+      <path d="M498 439h408" stroke="#757867" stroke-width="1" opacity=".05"/>
+      <path d="M538 495c55 24 89 33 148 32 52-1 97-8 148-23" fill="none" stroke="#7c7c67" stroke-width="10" opacity=".02"/>
+      <rect x="498" y="170" width="408" height="535" fill="#030706" opacity=".18"/>
+    </g>
+
+    <!-- 镜台与地面 -->
+    <rect x="479" y="720" width="446" height="18" fill="#1a1913"/>
+    <path d="M478 747h452" stroke="#171a14" stroke-width="5" opacity=".7"/>
+    <path d="M501 754l-54 146h405l-60-146Z" fill="#0c0e0b" opacity=".42"/>
+
+    <!-- 相机闪光与冷光 -->
+    <path d="M203 160c-37 191-44 441-16 704" fill="none" stroke="#c7b994" stroke-width="1.3" opacity=".055"/>
+    <path d="M1028 220c23 164 24 374 1 574" fill="none" stroke="#d1c29c" stroke-width="1" opacity=".04"/>
+    <path d="M785 346l-22 358h179l-28-358Z" fill="url(#doorLight4)" opacity=".34"/>
+    <circle cx="774" cy="606" r="2" fill="#e0c28d" opacity=".35"/>
+    <circle cx="800" cy="504" r="1.5" fill="#e0c28d" opacity=".3"/>
+    <rect width="1200" height="900" fill="url(#vignette4)"/>
+    <rect width="1200" height="900" filter="url(#grain4)" opacity=".25" style="mix-blend-mode:overlay"/>
+    <path d="M0 897h1200" stroke="#0a0c09" stroke-width="6" opacity=".8"/>
+  </g>
+</svg>

@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0e0f">
+  <meta name="description" content="青石里三号楼住户登记表。302室的官方登记与1999年旧表之间，人数并不一致。">
+  <title>住户记录 · 镜子里的304</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/shared.js" defer></script>
+  <script src="assets/js/residents.js" defer></script>
+</head>
+<body data-page="residents">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="青石里旧楼档案 · 首页">
+        <span class="brand__seal" aria-hidden="true">青</span>
+        <span class="brand__text">青石里旧楼档案<small>QSL ARCHIVE / HOUSE 03</small></span>
+      </a>
+      <div class="header-tools">
+        <span class="case-code">ENQUIRY / 03 / 未结</span>
+        <button class="notebook-btn" type="button" data-notebook-toggle aria-haspopup="dialog">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h12v17H6zM9 7h6M9 10.5h6M9 14h4M3.5 6H6M3.5 10H6M3.5 14H6M3.5 18H6"/></svg>
+          调查手记
+          <span data-clue-count>00</span>
+        </button>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="档案页面">
+      <a href="index.html" data-nav="home"><span>01</span>首页</a>
+      <a href="building.html" data-nav="building"><span>02</span>建筑资料</a>
+      <a href="residents.html" data-nav="residents"><span>03</span>住户记录</a>
+      <a href="photos.html" data-nav="photos"><span>04</span>旧照片</a>
+      <a href="audio.html" data-nav="audio"><span>05</span>声音档案</a>
+      <a href="archive.html" data-nav="archive"><span>06</span>私人记录
+        <svg class="nav-lock" viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="7" width="9" height="6.5" rx="1"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-hero" data-index="03">
+      <div class="container">
+        <div class="page-hero__inner">
+          <div>
+            <div class="breadcrumb">
+              <a href="index.html">档案首页</a><span>/</span><span>住户记录</span>
+            </div>
+            <div class="eyebrow" style="margin-bottom: 15px;">FILE 03 / TENANT REGISTRY</div>
+            <h1 class="page-title">三号楼<br>住户登记表</h1>
+            <p class="page-lead">
+              一份2001年的现行住户登记，一份1999年的旧表，以及青石小学移交的两行学生记录。
+              它们指向同一个地址：青石里3号楼302室。
+            </p>
+          </div>
+          <aside class="page-side">
+            <div class="page-side__label">登记地址 / ADDRESS</div>
+            <div class="page-side__value">青石里 3号楼<br>302室</div>
+            <div class="page-side__label" style="margin-top: 15px;">核对状态 / CHECKED</div>
+            <div class="page-side__value" id="current-status">现行登记：3人<br>旧表：4人</div>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-body">
+      <div class="container">
+        <div class="altered-notice" id="altered-notice" hidden>
+          <div>
+            系统检测到住户记录发生变化。<br>
+            <span class="mono" style="font-size: .53rem; color: var(--muted);">变更编号 QSL-304 / 记录时间 2001-06-17 02:13 / 修改者未记录</span>
+          </div>
+        </div>
+
+        <section class="page-section" style="margin-top: 0;" aria-labelledby="official-title">
+          <div class="section-index">资料 A / CURRENT REGISTER</div>
+          <h2 class="section-title" id="official-title">2001年现行登记</h2>
+          <p class="section-copy" id="official-section-copy">
+            物业在2001年重新抄录的住户登记。302室为本楼常住户，登记在册的成员共三人。
+          </p>
+
+          <div class="resident-columns" style="margin-top: 24px;">
+            <article class="paper" aria-labelledby="official-doc-title">
+              <div class="paper__inner">
+                <div class="paper__header">
+                  <div>
+                    <div class="paper__kicker">PROPERTY REGISTER / COPY 01</div>
+                    <h3 class="paper__title" id="official-doc-title">青石里三号楼住户登记表</h3>
+                    <p class="paper__sub" id="official-doc-sub">三楼 · 302室 / 登记日期：2001年</p>
+                  </div>
+                  <div class="record-badge">现行档案</div>
+                </div>
+
+                <div id="official-normal">
+                  <div class="record-count">
+                    <strong>3</strong><small>人 / 302室</small>
+                  </div>
+                  <table class="ledger">
+                    <thead>
+                      <tr><th>与户主关系</th><th>姓名</th><th>登记状态</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>户主</td><td class="is-strong">许建国</td><td>常住</td></tr>
+                      <tr><td>配偶</td><td class="is-strong">陈芸</td><td>常住</td></tr>
+                      <tr><td>子</td><td class="is-strong">许砚</td><td>常住</td></tr>
+                    </tbody>
+                  </table>
+                  <p class="annotation" style="margin-top: 14px;">备注：302室家庭人数为三人。无其他同住人员登记。</p>
+                </div>
+
+                <div id="official-altered" hidden>
+                  <div class="record-count">
+                    <strong>304</strong><small>室 / 新登记</small>
+                  </div>
+                  <table class="ledger">
+                    <thead>
+                      <tr><th>房号</th><th>登记成员</th><th>入住时间</th><th>退房时间</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="ledger-mark">302室</td>
+                        <td class="is-strong">许建国<br>陈芸</td>
+                        <td>原登记</td>
+                        <td>—</td>
+                      </tr>
+                      <tr>
+                        <td class="ledger-mark">304室</td>
+                        <td class="is-strong">许砚</td>
+                        <td>2001年6月17日<br>02:13</td>
+                        <td>未记录</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="annotation" style="margin-top: 14px;">
+                    备注：302室现有登记成员二人。304室登记信息由系统自动补入，无纸质原件。
+                  </p>
+                </div>
+
+                <div class="stamp-row" style="justify-content: space-between; align-items: center;">
+                  <span class="scan-label">原件抄录 / 物业办公室</span>
+                  <div class="stamp" aria-label="复印件章">复印件</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="paper paper--scan old-ledger" aria-labelledby="old-title">
+              <div class="paper__inner">
+                <div class="paper__header">
+                  <div>
+                    <div class="paper__kicker">PROPERTY REGISTER / 1999</div>
+                    <h3 class="paper__title" id="old-title">三号楼住户登记表（旧）</h3>
+                    <p class="paper__sub">302室 / 登记年份：1999年</p>
+                  </div>
+                  <div class="stamp" style="transform: rotate(4deg);">旧档</div>
+                </div>
+
+                <div class="record-count">
+                  <strong>4</strong><small>人 / 302室</small>
+                </div>
+
+                <table class="ledger">
+                  <thead>
+                    <tr><th>与户主关系</th><th>姓名</th><th>备注</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>户主</td><td class="is-strong">许建国</td><td>—</td></tr>
+                    <tr><td>配偶</td><td class="is-strong">陈芸</td><td>—</td></tr>
+                    <tr><td>子</td><td class="is-strong">许砚</td><td>—</td></tr>
+                    <tr>
+                      <td class="is-muted">—</td>
+                      <td>
+                        <button class="water-name" type="button" id="water-name-button" aria-label="查看被水渍遮挡的第四人姓名">
+                          许<span aria-hidden="true">██</span>
+                        </button>
+                      </td>
+                      <td class="is-muted"><span aria-hidden="true">字迹受潮</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="water-stain-card">
+                  <div class="scan-label">原件状况 / 纸张受潮，纤维粘连</div>
+                  <p class="handwrite" style="margin-top: 7px;">家庭人数：肆人。</p>
+                  <p class="annotation" style="margin-top: 4px;">第四人姓名不可完全辨认，仅余姓氏“许”。</p>
+                </div>
+
+                <div class="resident-action">
+                  <button class="btn btn--ghost" type="button" id="open-water-scan">查看水渍局部</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="page-section" aria-labelledby="school-title">
+          <div class="section-index">附卷 / SCHOOL TRANSFER</div>
+          <h2 class="section-title" id="school-title">青石小学移交材料</h2>
+          <p class="section-copy">
+            三号楼封闭前，学校档案室清点出一批地址属于青石里的旧学生登记表。
+            这两行记录用同一个地址、同一个监护人。
+          </p>
+
+          <div class="school-file">
+            <details class="file-folder" id="school-file">
+              <summary>
+                <span class="folder-title">
+                  <span class="folder-number">附件 03-A</span>
+                  青石小学学生登记表（1999学年）
+                </span>
+                <span class="folder-toggle">展开材料</span>
+              </summary>
+              <div class="folder-body">
+                <p class="folder-note">
+                  移交原因：校舍档案清理 / 原件核对：青石小学档案室 / 材料编号：QSXX-1999-041
+                </p>
+                <div class="paper paper--light school-sheet">
+                  <div class="paper__inner">
+                    <div class="paper__header">
+                      <div>
+                        <div class="paper__kicker">QINGSHI PRIMARY SCHOOL / STUDENT INDEX</div>
+                        <h3 class="paper__title">学生登记名册（节选）</h3>
+                        <p class="paper__sub">仅列出家庭住址为“青石里3号楼302室”的记录</p>
+                      </div>
+                      <div class="record-badge">原表抄录</div>
+                    </div>
+
+                    <div style="overflow-x: auto; margin-top: 17px;">
+                      <table class="ledger">
+                        <thead>
+                          <tr><th>姓名</th><th>学校</th><th>家庭住址</th><th>监护人</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="is-strong">许砚</td>
+                            <td>青石小学</td>
+                            <td>青石里3号楼302室</td>
+                            <td>许建国</td>
+                          </tr>
+                          <tr>
+                            <td class="is-strong" style="background: rgba(185,88,61,.09);">许棠</td>
+                            <td>青石小学</td>
+                            <td>青石里3号楼302室</td>
+                            <td>许建国</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="discrepancy-bar" style="border-left: 0; border-right: 0; background: transparent; margin-top: 16px;">
+                      <p class="discrepancy-bar__text">
+                        同一家庭住址，同一监护人，两名学龄儿童。<br>
+                        <strong>其中一名并未出现在2001年的现行住户登记中。</strong>
+                      </p>
+                      <span class="tag tag--warn">地址吻合</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <div class="discrepancy-bar" id="compare-bar" style="margin-top: 22px;">
+            <p class="discrepancy-bar__text" id="compare-text">
+              两份住户表的登记人数不同。交叉比对前，请先核对旧表姓名栏与学校材料。
+            </p>
+            <button class="btn btn--ghost" type="button" id="compare-button">交叉比对</button>
+          </div>
+        </section>
+
+        <div class="page-turn">
+          <div class="page-turn__side">
+            <span class="page-turn__label">PREVIOUS / 上一份档案</span>
+            <a href="building.html">← 建筑资料</a>
+          </div>
+          <div class="page-turn__progress" aria-label="档案进度：第3页，共6页">
+            <span class="is-past"></span><span class="is-past"></span><span class="is-current"></span><span></span><span></span><span></span>
+          </div>
+          <div class="page-turn__side page-turn__next">
+            <span class="page-turn__label">NEXT / 下一份档案</span>
+            <a href="photos.html">旧照片 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <dialog class="modal" id="water-dialog" aria-labelledby="water-dialog-title">
+    <div class="modal__bar">
+      <span class="modal__kicker">DAMAGED ORIGINAL / 1999 REGISTER</span>
+      <button class="dialog-close" type="button" data-close-water aria-label="关闭水渍原件视图">×</button>
+    </div>
+    <div class="modal__body">
+      <h2 class="modal__title" id="water-dialog-title">旧住户登记 / 姓名栏局部</h2>
+      <p class="modal__lead">
+        原件右下部分曾被水浸泡，纸纤维与墨水一起脱落。第四人的姓名只剩一个“许”字。
+      </p>
+
+      <div class="water-scan" aria-label="姓名栏扫描放大：可辨认的只有一个许字">
+        <div class="water-scan__row">
+          <span class="water-scan__label">与户主关系</span>
+          <span class="water-scan__value">——（模糊）</span>
+        </div>
+        <div class="water-scan__row">
+          <span class="water-scan__label">姓名</span>
+          <span class="water-scan__name">许<i>■■</i></span>
+        </div>
+        <div class="water-scan__row">
+          <span class="water-scan__label">备注</span>
+          <span class="water-scan__value">字迹受潮</span>
+        </div>
+        <div class="water-scan__stain" aria-hidden="true"></div>
+      </div>
+
+      <div class="doc-note" style="margin-top: 16px;">
+        姓名栏其余笔画无法确认。把这一行与学校移交材料放在一起看。
+      </div>
+
+      <div class="stamp-row">
+        <span class="tag tag--warn">信息缺失</span>
+        <span class="tag">只可辨认姓氏：许</span>
+      </div>
+    </div>
+  </dialog>
+
+  <noscript>
+    <div class="container"><p class="doc-note">本页的局部查看与材料比对需要启用 JavaScript。</p></div>
+  </noscript>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">青石里旧楼档案</p>
+        <p class="footer-fine">QSL-03 / 原住户许砚整理 / 非公开网络档案</p>
+      </div>
+      <div class="footer-tools">
+        <span class="footer-status"><i class="is-live" aria-hidden="true"></i>档案室离线备份</span>
+        <button class="reset-link" type="button" data-reset>恢复初始档案</button>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

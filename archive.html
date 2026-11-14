@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0e0f">
+  <meta name="description" content="许砚的私人记录。一份需要档案密钥才能打开的、关于304室的最后记录。">
+  <title>私人记录 · 镜子里的304</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/shared.js" defer></script>
+  <script src="assets/js/archive.js" defer></script>
+</head>
+<body data-page="archive">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="青石里旧楼档案 · 首页">
+        <span class="brand__seal" aria-hidden="true">青</span>
+        <span class="brand__text">青石里旧楼档案<small>QSL ARCHIVE / HOUSE 03</small></span>
+      </a>
+      <div class="header-tools">
+        <span class="case-code">ENQUIRY / 03 / 未结</span>
+        <button class="notebook-btn" type="button" data-notebook-toggle aria-haspopup="dialog">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h12v17H6zM9 7h6M9 10.5h6M9 14h4M3.5 6H6M3.5 10H6M3.5 14H6M3.5 18H6"/></svg>
+          调查手记
+          <span data-clue-count>00</span>
+        </button>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="档案页面">
+      <a href="index.html" data-nav="home"><span>01</span>首页</a>
+      <a href="building.html" data-nav="building"><span>02</span>建筑资料</a>
+      <a href="residents.html" data-nav="residents"><span>03</span>住户记录</a>
+      <a href="photos.html" data-nav="photos"><span>04</span>旧照片</a>
+      <a href="audio.html" data-nav="audio"><span>05</span>声音档案</a>
+      <a href="archive.html" data-nav="archive"><span>06</span>私人记录
+        <svg class="nav-lock" viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="7" width="9" height="6.5" rx="1"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-hero" data-index="06">
+      <div class="container">
+        <div class="page-hero__inner">
+          <div>
+            <div class="breadcrumb">
+              <a href="index.html">档案首页</a><span>/</span><span>私人记录</span>
+            </div>
+            <div class="eyebrow" style="margin-bottom: 15px;">FILE 06 / RESTRICTED PERSONAL RECORD</div>
+            <h1 class="page-title">许砚的<br>私人记录</h1>
+            <p class="page-lead">
+              最后一份资料没有出现在公开目录里。它需要一把由房间编号和事件时间拼成的钥匙。
+            </p>
+          </div>
+          <aside class="page-side">
+            <div class="page-side__label">访问权限 / ACCESS</div>
+            <div class="page-side__value">受限 / 仅本人整理</div>
+            <div class="page-side__label" style="margin-top: 15px;">归档状态 / STATUS</div>
+            <div class="page-side__value">未公开<br>最后一份资料</div>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-body">
+      <div class="container">
+        <div class="archive-shell" id="archive-shell">
+          <section class="lock-screen" id="archive-locked" aria-labelledby="lock-title">
+            <div class="lock-visual" aria-hidden="true">
+              <div class="lock-visual__index">06</div>
+              <div class="lock-visual__top">
+                <span class="mono">PRIVATE ARCHIVE / DOOR NOT FOUND</span>
+                <span class="tag tag--warn">未登记</span>
+              </div>
+              <div class="lock-door">
+                <div class="lock-door__plate">
+                  PRIVATE<br><strong>QSL / 06</strong>
+                  NO ENTRY
+                </div>
+              </div>
+              <p class="lock-visual__bottom">
+                这扇门没有出现在任何一张官方图纸上。<br>
+                但有些记录，只在门被打开之后才会存在。
+              </p>
+            </div>
+
+            <div class="lock-panel" id="lock-panel">
+              <div class="lock-kicker">RESTRICTED / 7-DIGIT ACCESS KEY</div>
+              <h2 class="lock-title" id="lock-title">此档案尚未公开</h2>
+              <p class="lock-desc">
+                请输入由 <strong>房间编号</strong> 与 <strong>事件时间</strong> 拼接而成的七位数字。
+                线索分散在建筑资料和声音档案里。
+              </p>
+
+              <form class="pin-form" id="pin-form" novalidate>
+                <div class="pin-display" id="pin-display" aria-hidden="true">
+                  <span class="pin-slot"></span>
+                  <span class="pin-slot"></span>
+                  <span class="pin-slot"></span>
+                  <span class="pin-slot"></span>
+                  <span class="pin-slot"></span>
+                  <span class="pin-slot"></span>
+                  <span class="pin-slot"></span>
+                </div>
+                <p class="sr-only" id="pin-live" aria-live="polite">已输入 0 位数字，共 7 位。</p>
+
+                <div class="pin-keypad" aria-label="数字键盘">
+                  <button class="keypad-key" type="button" data-pin-key="1">1</button>
+                  <button class="keypad-key" type="button" data-pin-key="2">2</button>
+                  <button class="keypad-key" type="button" data-pin-key="3">3</button>
+                  <button class="keypad-key" type="button" data-pin-key="4">4</button>
+                  <button class="keypad-key" type="button" data-pin-key="5">5</button>
+                  <button class="keypad-key" type="button" data-pin-key="6">6</button>
+                  <button class="keypad-key" type="button" data-pin-key="7">7</button>
+                  <button class="keypad-key" type="button" data-pin-key="8">8</button>
+                  <button class="keypad-key" type="button" data-pin-key="9">9</button>
+                  <button class="keypad-key keypad-key--utility" type="button" data-pin-clear>清空</button>
+                  <button class="keypad-key" type="button" data-pin-key="0">0</button>
+                  <button class="keypad-key keypad-key--utility" type="button" data-pin-back aria-label="退格">⌫</button>
+                </div>
+
+                <div class="pin-actions">
+                  <button class="btn btn--accent" type="submit" id="unlock-button">
+                    解锁档案
+                  </button>
+                  <span class="mono" style="color: var(--faint); font-size: .46rem;">KEY FORMAT / 3 + 4</span>
+                </div>
+                <p class="pin-message" id="pin-message" role="status">请输入 7 位数字密钥。</p>
+                <button class="hint-toggle" type="button" id="hint-toggle" aria-expanded="false" aria-controls="pin-hint">
+                  需要提示？
+                </button>
+                <div class="pin-hint" id="pin-hint" hidden>
+                  <p>密钥由两组数字依次拼接：3位房间编号 + 4位时间（小时和分钟各两位，不含冒号）。</p>
+                  <p>房间编号：官方图纸没有，但旧草图在镜子旁留下过。时间：录音标签与维修补记重复出现的异常时刻。</p>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <section class="unlocked" id="archive-unlocked" aria-labelledby="private-title">
+            <div class="private-head">
+              <div>
+                <div class="private-head__label">ACCESS GRANTED / FILE OPENED</div>
+                <h2 class="sr-only" id="private-title">许砚的私人记录</h2>
+              </div>
+              <div class="private-head__note">
+                FILE 06 / 个人信息 / 未公开索引<br>
+                阅读时请保持环境安静
+              </div>
+            </div>
+
+            <div class="private-layout">
+              <article class="private-record">
+                <header class="private-record__header">
+                  <div>
+                    <div class="private-record__file">PRIVATE_NOTE / UNTITLED / 最后修改时间未知</div>
+                    <h3 class="private-record__title">我已经把所有资料找回来了。</h3>
+                  </div>
+                  <div class="private-record__date">
+                    许砚<br>成年后整理
+                  </div>
+                </header>
+
+                <div class="private-record__body">
+                  <p>我已经把所有资料找回来了。</p>
+                  <p>我终于知道那个女孩是谁了。</p>
+                  <p>她是<span class="hit">许棠</span>。</p>
+                  <p>她是我的姐姐。</p>
+                  <p>但是我仍然不明白，为什么爸妈都不记得她。</p>
+                  <p>我曾经问过爸爸，他说我小时候一直是一个人。</p>
+                  <p>可我找到了两个人的出生证明。</p>
+                  <p>我也找到了姐姐写给我的信。</p>
+                  <p>我记得她喜欢拍照。</p>
+                  <p>她不喜欢吃胡萝卜。</p>
+                  <p>她睡觉前总会把门锁好。</p>
+                  <p>我已经想起来了。</p>
+                  <div class="final-lines">
+                    <p>可是，镜子里的门又出现了。</p>
+                    <p>今天凌晨2点13分，我听见有人敲门。</p>
+                    <p>三下。</p>
+                    <p>和当年一模一样。</p>
+                  </div>
+                  <div class="private-record__signature">—— 许砚</div>
+                </div>
+
+                <div class="name-gate">
+                  <label class="name-gate__label" for="name-input">请输入消失者的姓名。</label>
+                  <form class="name-form" id="name-form">
+                    <input id="name-input" name="name" type="text" inputmode="text" autocomplete="off" maxlength="10" placeholder="姓名" aria-describedby="name-error">
+                    <button class="btn btn--accent" type="submit">确认姓名</button>
+                  </form>
+                  <p class="name-error" id="name-error" role="alert"></p>
+                  <p class="name-tip">输入完成后，最后一卷录音会自动播放。名字必须与档案中出现过的记录一致。</p>
+                </div>
+
+                <div class="door-path">
+                  <div class="door-path__text">
+                    <strong>走廊尽头 / 02:13</strong>
+                    门后传来三下敲击。也许她不想再等了。
+                  </div>
+                  <button class="btn" type="button" id="open-door">打开门</button>
+                </div>
+              </article>
+
+              <aside class="private-side" aria-label="私人记录附件">
+                <div class="side-card">
+                  <div class="side-card__label">ACCESS NOTE / 阅读顺序</div>
+                  <h3 class="side-card__title">先把名字找回来。</h3>
+                  <p class="side-card__text">
+                    最后一页下方有一个姓名栏。照片、登记表和小学材料都能帮助你确认她是谁。
+                    输入正确后，不要关闭页面。
+                  </p>
+                  <div class="stamp-row">
+                    <span class="tag tag--ok">档案已打开</span>
+                    <span class="tag">非公开</span>
+                  </div>
+                </div>
+
+                <div class="side-card">
+                  <div class="side-card__label">ATTACHMENT / UNKNOWN AUDIO</div>
+                  <div class="attachment" id="unknown-attachment">
+                    <div class="attachment__head">
+                      <span>UNKNOWN_AUDIO.WAV</span>
+                      <span id="unknown-duration">00:00</span>
+                    </div>
+                    <div class="attachment__name" id="unknown-source">空白音轨 / 无内容</div>
+                    <p class="attachment__empty" id="unknown-empty">文件没有可播放内容。波形为空。</p>
+
+                    <div class="ghost-tape" id="ghost-tape">
+                      <div class="ghost-tape__title">新增音轨 / 来源未知 / 00:06</div>
+                      <p class="ghost-tape__line">「你认错人了。<br>她还在这里。」</p>
+                      <div class="ghost-tape__controls">
+                        <button type="button" id="replay-ghost">重新播放声音</button>
+                        <span>它不在许砚的目录里。</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="side-card">
+                  <div class="side-card__label">NOTE / 最后的提醒</div>
+                  <p class="side-card__text">
+                    你可以继续核对档案，也可以用任何方式离开这里。<br>
+                    只是别忘了，门已经听过你的声音。
+                  </p>
+                </div>
+              </aside>
+            </div>
+          </section>
+        </div>
+
+        <div class="page-turn">
+          <div class="page-turn__side">
+            <span class="page-turn__label">PREVIOUS / 上一份档案</span>
+            <a href="audio.html">← 声音档案</a>
+          </div>
+          <div class="page-turn__progress" aria-label="档案进度：第6页，共6页">
+            <span class="is-past"></span><span class="is-past"></span><span class="is-past"></span><span class="is-past"></span><span class="is-past"></span><span class="is-current"></span>
+          </div>
+          <div class="page-turn__side page-turn__next">
+            <span class="page-turn__label">END OF PUBLIC ARCHIVE</span>
+            <span class="mono" style="color: var(--muted-dim); font-size: .53rem;">06 / 06</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="last-recording" id="last-recording" role="dialog" aria-modal="true" aria-labelledby="last-recording-title" hidden>
+    <div class="last-recording__inner">
+      <button class="last-skip" type="button" id="skip-final">跳过等待 →</button>
+      <div class="last-kicker">LAST TAPE / 正在读取</div>
+      <h2 class="sr-only" id="last-recording-title">输入正确后的新录音</h2>
+      <div class="last-lines">
+        <p style="--line-delay: .5s;">哥哥？</p>
+        <p style="--line-delay: 2.35s;">是你吗？</p>
+        <p style="--line-delay: 4.75s;">我在这里等了很久。</p>
+        <p style="--line-delay: 7.9s;">你终于想起来了。</p>
+      </div>
+      <div class="last-knocks" aria-label="三下敲击声">
+        <i></i><i></i><i></i>
+      </div>
+      <p class="last-caption">录音结束后，页面会自动跳转。</p>
+    </div>
+  </div>
+
+  <noscript>
+    <div class="container"><p class="doc-note">私人记录的解锁、姓名确认与录音播放需要启用 JavaScript。</p></div>
+  </noscript>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">青石里旧楼档案</p>
+        <p class="footer-fine">QSL-03 / 原住户许砚整理 / 非公开网络档案</p>
+      </div>
+      <div class="footer-tools">
+        <span class="footer-status"><i class="is-live" aria-hidden="true"></i>档案室离线备份</span>
+        <button class="reset-link" type="button" data-reset>恢复初始档案</button>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
